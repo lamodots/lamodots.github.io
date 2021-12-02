@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0d192b;
+}
+
+@media screen and (max-width: 1440px) {
+  .main {
+    background-color: #0d192b;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card_container {
+    width: 375px;
+    max-width: 375px;
+    height: 600px;
+    background-color: #14253d;
+    border-radius: 8px;
+  }
+  .card_content {
+    width: 330px;
+    border-radius: 8px;
+    padding-top: 22px;
+    margin: auto;
+  }
+  .view_icon {
+    display: none;
+    position: absolute;
+    top: 29%;
+    left: 48.8%;
+    width: 40px;
+  }
+  .view_icon img {
+    width: 40px;
+  }
+  .ntf_content {
+    width: 330px;
+    max-width: 330px;
+    height: 328px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .ntf_content:active {
+    background-color: #00fff7;
+  }
+  .ntf_content img {
+    width: 330px;
+    height: 328px;
+    max-width: 330px;
+    border-radius: 8px;
+  }
+  .ntf_content img:active {
+    background-color: #00fff7;
+    opacity: 0.3;
+  }
+  .equili_container {
+    width: 330px;
+  }
+  .equili_container a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+  .equili_container a:active {
+    color: #00fff7;
+  }
+  .heading {
+    display: block;
+    line-height: 4;
+  }
+  .equitext {
+    font-size: 18px;
+    display: block;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: #8bacda;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+  .eth_price_container {
+    width: 330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 22px;
+  }
+  .ethprice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .eth_value {
+    color: #00fff7;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-left: 8px;
+    cursor: pointer;
+  }
+  .timer {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .count_down {
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-left: 8px;
+  }
+  .line {
+    width: 330px;
+    margin: 15px auto;
+    background-color: #2f415b;
+    height: 2px;
+  }
+  .avarter_container {
+    width: 330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .avarter_icon {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+    border: 1px solid white;
+    border-radius: 50px;
+  }
+  .avarter_icon img {
+    width: 30px;
+    height: 30px;
+    object-position: center;
+    -o-object-position: center;
+  }
+  .name_on_averter {
+    padding-left: 5px;
+  }
+  .creator {
+    color: #8bacda;
+    font-size: 14px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+  }
+  .creator_name {
+    font-size: 14px;
+    font-family: "Outfit", sans-serif;
+    color: white;
+    font-weight: 300;
+  }
+}
+/*# sourceMappingURL=style.css.map */

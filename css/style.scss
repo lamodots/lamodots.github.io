@@ -1,0 +1,202 @@
+$Mobile-width:375px;
+$small-width:330px;
+$Desktop-wudth:1440px;
+$Primary-soft-blue:hsl(215, 51%, 70%);
+$Primary-cyan: hsl(178,100%,50%);
+$Neutral-very-dark-blue-Main-BG:hsl(217,54%,11%);
+$Neutral-very-dark-blue-Card-BG:hsl(216, 50%, 16%);
+$Neutral-very-dark-blue-line:hsl(215,32%,27%);
+$Neutral-white:hsl(0,0%,100%);
+$Body-copy-font-size:18px;
+$font-weight-1:300;
+$font-weight-2:400;
+$font-weight-3:600;
+$border-radius:8px;
+$box-shadow: 0 2px 4px 6px hsl(215,32%,27%);
+$font-stack:'Outfit', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $Neutral-very-dark-blue-Main-BG;
+
+}
+@media screen and (max-width:$Desktop-wudth) {
+    
+.main{
+    background-color: $Neutral-very-dark-blue-Main-BG;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_container{
+    width: $Mobile-width;
+    max-width: $Mobile-width;
+    height: 600px;
+    background-color: $Neutral-very-dark-blue-Card-BG;
+    border-radius: $border-radius;
+   
+}
+.card_content{
+    width: $small-width;
+    border-radius: $border-radius;
+    padding-top: 22px;
+    margin: auto;
+    
+}
+.view_icon{
+  display: none;
+    position: absolute;
+    top: 29%;
+    left: 48.8%;
+    width: 40px;
+}
+
+.view_icon img{
+    width: 40px;
+}
+
+.ntf_content{
+    width: $small-width;
+    max-width: $small-width;
+    height: 328px;
+    border-radius: $border-radius;
+    cursor: pointer;
+   
+}
+.ntf_content:active{
+    background-color: $Primary-cyan;
+}
+.ntf_content img{
+    width: $small-width;
+    height: 328px;
+    max-width: $small-width;
+    border-radius: $border-radius;
+    
+}
+.ntf_content img:active{
+    background-color:$Primary-cyan ;
+    opacity: 0.3;
+}
+.equili_container{
+    width: $small-width;
+    
+}
+.equili_container a{
+    text-decoration: none;
+    text-transform: capitalize;
+ 
+    color: $Neutral-white;
+    font-size: $Body-copy-font-size;
+    font-family: $font-stack;
+    font-weight: $font-weight-3;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.equili_container a:active{
+    color: $Primary-cyan;
+}
+.heading{
+    display: block;
+    line-height: 4;
+}
+.equitext{
+    font-size: $Body-copy-font-size;
+    display: block;
+    font-family: $font-stack;
+    font-weight: $font-weight-2;
+    color: $Primary-soft-blue;
+    line-height: 1.5;
+    letter-spacing: 1px;
+   
+}
+.eth_price_container{
+    width: $small-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 22px;
+}
+.ethprice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.eth_value{
+    color:$Primary-cyan ;
+    font-family: $font-stack;
+    font-size: 14px;
+    font-weight: $font-weight-3;
+    letter-spacing: 1px;
+    padding-left: 8px;
+    cursor: pointer;
+}
+.timer{
+    display: block;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.count_down{
+    color:$Neutral-white ;
+    font-family: $font-stack;
+    font-size: 14px;
+    font-weight: $font-weight-3;
+    letter-spacing: 1px;
+    padding-left: 8px;
+}
+.line{
+    width: $small-width;
+    margin: 15px auto;
+    background-color: $Neutral-very-dark-blue-line;
+    height: 2px;
+}
+.avarter_container{
+    width: $small-width;
+    display: flex;
+    align-items: center;
+}
+.avarter_icon{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+    border: 1px solid $Neutral-white;
+    border-radius: 50px;
+
+}
+.avarter_icon img{
+    width: 30px;
+    height: 30px;
+    object-position: center;
+    -o-object-position: center;
+   
+}
+.name_on_averter{
+    padding-left: 5px;
+}
+.creator{
+    color:$Primary-soft-blue;
+    font-size: 14px;
+    font-family: $font-stack;
+    font-weight: $font-weight-1;
+}
+.creator_name{
+    font-size: 14px;
+    font-family: $font-stack;
+    color: $Neutral-white;
+    font-weight: $font-weight-1;
+    
+}
+
+
+
+
+}
