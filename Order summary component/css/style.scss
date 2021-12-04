@@ -1,0 +1,366 @@
+// Imported google fonts
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@500;700;900&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+//Sass Variables
+//Layout
+$mobile:375px;
+$small-mobile:350px;
+$desktop:1440px;
+//Colors
+$primary-pale-blue:hsl(225, 100%, 94%);
+$primary-bright-blue:hsl(245, 75%, 52%);
+$neutral-very-pale-blue:hsl(225, 100%, 98%);
+$neutral-dsaturated-blue:hsl(224, 23%, 55%);
+$neutral-dark-blue:hsl(223, 47%, 23%);
+
+//Typography Base size 16px, scale 1.067-minor second.
+$font-stack:'Outfit', sans-serif;
+$font-size-paragraph:16px;
+$small-font-size:13.17px;
+$paragraph-line-height:17.072;
+$h4h5:16px;
+$h4h5-font-weight:500;
+$h3: 17.072px;
+$h3-line-height:18.215824;
+$h2:18.215824px;
+$h2-line-height:19.436284208;
+$h1:22.13px;
+$h1-line-height:1.5;
+$h1-font-weight:900;
+
+//Design
+$box-shadow:0px 2px 4px 6px $primary-pale-blue;
+$border-radius:20px;
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+@media screen and (max-width:$desktop) {
+    body{
+        font-family: $font-stack;
+        background-color: $primary-pale-blue;
+    }
+    .main_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      
+         width: 100%;
+         height:60vh;
+         padding-top: 250px;
+       
+        
+        
+    }
+    .container{
+        max-width: $mobile;
+        width: $mobile;
+        background-color: #ffffff;
+        border-radius: $border-radius;
+       
+    }
+    .wrapper{
+        width: 100%;
+        max-width: 100%;
+     
+    }
+    .illus_container{
+        width:100%;
+        max-width: 100%;
+        border-radius: $border-radius;
+       object-fit: cover;
+        object-position: center;
+    }
+    .illus_container img{
+        width: 100%;
+        max-width: 100%;
+        object-position: center;
+        object-fit: cover;
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        border: none;
+    }
+    h1{
+        font-size: $h1;
+        font-weight: $h1-font-weight;
+        font-family: $font-stack;
+        text-transform: capitalize;
+        line-height: $h1-line-height;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 20px 0;
+        color:#333
+      
+    }
+    p{
+        text-align: center;
+        font-size: $font-size-paragraph;
+        width: 320px;
+        margin: 0 auto;
+       font-family: $font-stack;
+        font-weight: $h4h5-font-weight;
+        line-height: 1.5;
+        color: $neutral-dsaturated-blue;
+    }
+    .plan_container{
+        background-color: $neutral-very-pale-blue;
+        max-width: 320px;
+        width:320px;
+        height: 80px;
+        max-height: 80px;
+        margin: 20px auto;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+       
+       
+    }
+    .music_icon{
+        background-color:$primary-pale-blue; ;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        margin-left: 20px;
+     
+    }
+    .music_icon img{
+        width: 40px;
+        height: 40px;
+
+    }
+    .price{
+     margin-left: 10px;
+    }
+
+    .price span{
+        color:  $neutral-dsaturated-blue;
+        font-weight: $font-size-paragraph;
+    }
+    .price h4{
+        font-size: $h4h5;
+        font-weight: 700;
+        line-height: 1.5;
+        font-family: $font-stack;
+        color: #333;
+    }
+
+
+    .change{
+        margin-left: 80px;
+    }
+    .change a{
+        font-size:$small-font-size;
+    }
+    .change a:hover{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    button{
+        display: block;
+        padding:12px;
+        border: none;
+        width: 330px;
+        max-width: 330px;
+        margin: 0 auto;
+        border-radius: 8px;
+        line-height: 1.5;
+        background-color:$primary-bright-blue ;
+        color: #ffffff;
+        font-weight: $h1-font-weight;
+        font-size: $small-font-size;
+       
+    }
+    button:hover{
+        background-color:$neutral-dsaturated-blue ;
+        cursor: pointer;
+    }
+
+    .cancel{
+        display: block;
+        width: 100px;
+       margin: 25px auto;
+       
+    }
+    .cancel a{
+        color: $neutral-dsaturated-blue;
+        font-size: $small-font-size;
+        font-weight: 700;
+        font-family: $font-stack;
+        text-decoration: none;
+
+    }
+    .cancel a:hover{
+        color:#333 ;
+    }
+}
+//mobile view
+
+@media screen and (max-width:$desktop) {
+    body{
+        font-family: $font-stack;
+        background-color: $primary-pale-blue;
+    }
+    .main_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      
+         width: 100%;
+         height:60vh;
+         padding-top: 250px;
+       
+        
+        
+    }
+    .container{
+        max-width: $small-mobile;
+        width: $small-mobile;
+        background-color: #ffffff;
+        border-radius: $border-radius;
+       
+    }
+    .wrapper{
+        width: 100%;
+        max-width: 100%;
+     
+    }
+    .illus_container{
+        width:100%;
+        max-width: 100%;
+        border-radius: $border-radius;
+       object-fit: cover;
+        object-position: center;
+    }
+    .illus_container img{
+        width: 100%;
+        max-width: 100%;
+        object-position: center;
+        object-fit: cover;
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        border: none;
+    }
+    h1{
+        font-size: $h1;
+        font-weight: $h1-font-weight;
+        font-family: $font-stack;
+        text-transform: capitalize;
+        line-height: $h1-line-height;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 20px 0;
+        color:#333
+      
+    }
+    p{
+        text-align: center;
+        font-size: $font-size-paragraph;
+        
+        
+        margin: 0 auto;
+       font-family: $font-stack;
+        font-weight: $h4h5-font-weight;
+        line-height: 1.5;
+        color: $neutral-dsaturated-blue;
+    }
+    .plan_container{
+        background-color: $neutral-very-pale-blue;
+        max-width: 300px;
+        width:300px;
+        height: 80px;
+        max-height: 80px;
+        margin: 20px auto;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+       
+       
+    }
+    .music_icon{
+        background-color:$primary-pale-blue; ;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        margin-left: 20px;
+     
+    }
+    .music_icon img{
+        width: 40px;
+        height: 40px;
+
+    }
+    .price{
+     margin-left: 10px;
+    }
+
+    .price span{
+        color:  $neutral-dsaturated-blue;
+        font-weight: $font-size-paragraph;
+    }
+    .price h4{
+        font-size: $h4h5;
+        font-weight: 700;
+        line-height: 1.5;
+        font-family: $font-stack;
+        color: #333;
+    }
+
+
+    .change{
+        margin-left: 80px;
+    }
+    .change a{
+        font-size:$small-font-size;
+    }
+    .change a:hover{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    button{
+        display: block;
+        padding:12px;
+        border: none;
+        width: 300px;
+        max-width: 330px;
+        margin: 0 auto;
+        border-radius: 8px;
+        line-height: 1.5;
+        background-color:$primary-bright-blue ;
+        color: #ffffff;
+        font-weight: $h1-font-weight;
+        font-size: $small-font-size;
+       
+    }
+    button:hover{
+        background-color:$neutral-dsaturated-blue ;
+        cursor: pointer;
+    }
+
+    .cancel{
+        display: block;
+        width: 100px;
+       margin: 25px auto;
+       
+    }
+    .cancel a{
+        color: $neutral-dsaturated-blue;
+        font-size: $small-font-size;
+        font-weight: 700;
+        font-family: $font-stack;
+        text-decoration: none;
+
+    }
+    .cancel a:hover{
+        color:#333 ;
+    }
+}
