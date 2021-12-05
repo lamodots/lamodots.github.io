@@ -1,0 +1,341 @@
+//Typograpy
+$font-family-inter:'Inter', sans-serif;
+$font-family-weight-inter1:400;
+$font-family-weight-inter2:700;
+$font-family-lex:'Lexend Deca', sans-serif;
+$font-family-weight-lex:400;
+$body-copy-size:15px;
+    //font-sizes scale 1.125.
+
+$h2:24.03px;
+$h3:21.36px;
+$h4 :18.98px;
+$h5:16.88px;
+$h6:15px;
+//Colors
+    //primary
+$main-background:hsl(233, 47%, 7%);
+$card-background: hsl(244, 38%, 16%);
+$accent: hsl(277, 64%, 61%);
+    //Neural
+$main-heading-stats:hsl(0, 0%, 100%);
+$main-paragraph:hsla(0, 0%, 100%, 0.75);
+$stat-headings:hsla(0, 0%, 100%, 0.6);
+//widths
+$mobile:375px;
+$small-mobile:350px;
+$desktop:1440px;
+@media screen and (max-width:$desktop){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: $main-background;
+    }
+
+    .container{
+        background-color: $main-background;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper{
+        background-color: $card-background;
+        width: 800px;
+        height: 300px;
+        display: flex;
+        border-radius: 8px;   
+    }
+    .stat_illus{
+        width: 400px;
+        height: 300px;
+        background-color: $accent;
+        order: 1;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+       
+    }
+    .stat_illus img{
+        width: 400px;
+        height: 300px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+       opacity: 0.6;
+        
+    }
+    .stat_body{
+        width: 400px;
+        border-radius: 8px;
+      
+    
+    }
+    h2{
+        font-size: $h2;
+        font-family: $font-family-inter;
+        font-weight: $font-family-weight-inter2;
+        width: 320px;
+        padding-top: 40px;
+        padding-left: 40px;
+        line-height: 1.125;
+        color:$main-heading-stats ;
+        letter-spacing: 1px;
+        
+       
+    }
+    h2 span{
+        color: $accent;
+    }
+    p{
+        padding-left: 40px;
+        line-height: 1.5;
+        padding-top: 20px;
+        font-size: 11px;
+        width: 320px;
+        font-family: $font-family-inter;
+        font-weight: $font-family-weight-inter1;
+        color: $stat-headings;
+    }
+    .comapnies{
+        width: 260px;
+       
+        margin: 60px 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .comp{
+        font-weight: $font-family-weight-inter2;
+        font-family: $font-family-inter;
+        font-size: $h5;
+        color: $main-heading-stats;
+        padding-right: 30px;
+    }
+    .comp span {
+        color: $stat-headings;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: $font-family-weight-inter1;
+        font-family: $font-family-lex;
+    }
+    .temp{
+        font-weight: $font-family-weight-inter2;
+        font-family: $font-family-inter;
+        font-size: $h5;
+        color: $main-heading-stats;
+        padding-left: 20px;
+        
+    }
+    .temp .tmp{
+        font-weight: $font-family-weight-inter2;
+        font-family: $font-family-inter;
+        font-size: $h5;
+        color: $main-heading-stats;
+    }
+    .temp span{
+        color: $stat-headings;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: $font-family-weight-inter1;
+        font-family: $font-family-lex;
+    }
+    .quer{
+        font-weight: $font-family-weight-inter2;
+        font-family: $font-family-inter;
+        font-size: $h5;
+        color: $main-heading-stats;
+        padding-left: 40px;
+        
+        
+    }
+    .quer .qu{
+        font-weight: $font-family-weight-inter2;
+        font-family: $font-family-inter;
+        font-size: $h5;
+        color: $main-heading-stats;
+    }
+    .quer span{
+        color: $stat-headings;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: $font-family-weight-inter1;
+        font-family: $font-family-lex;
+    }
+
+}
+//mobile
+
+@media only screen and (max-width:$mobile){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: $main-background;
+    }
+
+    .container{
+        background-color: $main-background;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+      
+    }
+    .wrapper{
+       
+        width: 320px;
+        height: 585px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px; 
+        
+    }
+    .stat_illus{
+        width: 320px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: $accent;
+       
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius:0;
+       
+       
+    }
+    .stat_illus img{
+        width: 320px;
+        height: 200px;
+        border-top-right-radius: 8px;
+       border-top-left-radius: 8px;
+       border-bottom-right-radius: 0;
+       opacity: 0.6;
+        
+    }
+    .stat_body{
+        width: 320px;
+       border-top-right-radius:0;
+       border-top-left-radius: 0;
+        order: 2;
+     
+    
+    }
+    h2{
+        font-size: $h2;
+        font-family: $font-family-inter;
+        font-weight: $font-family-weight-inter2;
+        padding-right: 20px;
+        padding-top: 40px;
+       width: 300px;
+       text-align: center;
+        line-height: 1.125;
+        color:$main-heading-stats ;
+        letter-spacing: 1px;
+        
+       
+    }
+    h2 span{
+        color: $accent;
+    }
+    p{
+       
+        line-height: 1.5;
+        padding-top: 10px;
+        font-size: 13px;
+        width: 300px;
+        text-align: center;
+       
+       margin:0 auto;
+        font-family: $font-family-inter;
+        font-weight: $font-family-weight-inter1;
+        color: $stat-headings;
+        padding-right: 30px;
+    }
+    .comapnies{
+        width: 260px;
+     
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      padding-left: 30px;
+        
+
+    }
+    .comp{
+        font-weight: $font-family-weight-inter2;
+        font-family: $font-family-inter;
+        font-size: $h5;
+        color: $main-heading-stats;
+        padding-right: 30px;
+        display: block;
+        text-align: center;
+    }
+    .comp span {
+        color: $stat-headings;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: $font-family-weight-inter1;
+        font-family: $font-family-lex;
+        display: block;
+    }
+    .temp{
+     
+        padding-right: 30px;
+        display: block;
+       
+        margin: 10px auto;
+        
+    }
+    .temp .tmp{
+        font-weight: $font-family-weight-inter2;
+        font-family: $font-family-inter;
+        font-size: $h5;
+        color: $main-heading-stats;
+    }
+    .temp span{
+        color: $stat-headings;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: $font-family-weight-inter1;
+        font-family: $font-family-lex;
+        display: block;
+        padding-right: 20px;
+        text-align: center;
+    }
+    .quer{
+        font-weight: $font-family-weight-inter2;
+        font-family: $font-family-inter;
+        font-size: $h5;
+        color: $main-heading-stats;
+        padding-right: 50px;
+        display: block;
+       
+        text-align: center;
+        
+        
+    }
+    .quer .qu{
+        font-weight: $font-family-weight-inter2;
+        font-family: $font-family-inter;
+        font-size: $h5;
+        color: $main-heading-stats;
+    }
+    .quer span{
+        color: $stat-headings;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: $font-family-weight-inter1;
+        font-family: $font-family-lex;
+        display: block;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+
+}
